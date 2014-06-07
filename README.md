@@ -32,6 +32,8 @@ Run in an empty directory
 
 Change the `build.gradle` file to look similar to the one here. Create `src/main/java`, and fill it with happiness and sunshine. See the Spark docs.
 
+Create `src/main/webapp/WEB-INF`. Gradle's Jetty plugin expects the directory to exist, and Java servlet containers need the directory to contain a `web.xml` file for some damned reason or another. See the copy in this repo, and read Spark's docs. It's not too complicated.
+
 That's it. Now you have a Spark application that you can flesh out and build with Gradle. See the discussion above about running the sample.
 
 #### Related project
